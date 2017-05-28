@@ -1,0 +1,18 @@
+<div>
+    <h1><a href="/">MindtheByte Molecule</a></h1>
+</div>
+
+{% for molecule in molecules %}
+    <div>
+        <h1>Molecule ID: <a href="">{{ molecule.ChemblID }}</a></h1>
+        <p>Smile: {{ molecule.Smile}}</p>
+        <p>mw_freebase: {{ molecule.mw_freebase}}</p>
+        <p>rtb: {{ molecule.rtb}}</p>
+        <p>Result: {{ molecule.Result}}</p>
+        <p>Drug: {{ molecule.Drug}}</p>
+        <p>TAG: {{ molecule.TAG}}</p>
+        <p>URL: {{ molecule.URL}}</p>
+        <p>imageURL: {{ molecule.imageURL }}</p>
+
+    </div>
+{% endfor %}
