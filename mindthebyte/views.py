@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def molecule_list(request):
+    return render(request, 'mindthebyte/molecule_list.html', {})
